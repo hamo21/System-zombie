@@ -11,19 +11,16 @@ client.on('message', message => {
       }
 });
 
-
-
-client.on('message', message => {
-     if (message.content === "رابط") {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#9B59B6")
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
+client.on('message', msg => {
+  if (msg.content === 'رابط') {
+    msg.reply('**تم ارسال الرابط في الخاص**');
+  }
+});
 
     
 client.on('message', message => {
      if (message.content === "رابط") {
-message.author.send("***رابط كلان زد***" + `  **
+message.author.send("***WELCOME TO ZOMBIE***" + `  **
 
 https://discord.gg/2UJV6Hp
 
