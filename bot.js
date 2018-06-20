@@ -22,7 +22,7 @@ client.on('message', msg => {
     
 client.on('message', message => {
      if (message.content === "رابط") {
-message.author.send("***WELCOME TO ZOMBIE***" + `  **
+message.author.send("***WELCOME TO Kingdom of Death***" + `  **
 
 https://discord.gg/2UJV6Hp
 
@@ -46,7 +46,7 @@ client.on("message", message => {
       color: 0x06DF00,
       description: "تم مسح الرسائل بنجاح",
       footer: {
-        text: "ZOMBIE Bot."
+        text: "Kingdom of Death Bot."
       }
     }}).then(msg => {msg.delete(3000)});
                         }
@@ -156,7 +156,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Z_4Ever`,"http://twitch.tv/S-F")
+client.user.setGame(`⚔Kingdom of Death⚔`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
