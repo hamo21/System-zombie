@@ -76,7 +76,7 @@ client.on('message', message => {
 
 
 client.on("message", message => {
-  var prefix = "#";
+  var prefix = "!";
 
           var args = message.content.substring(prefix.length).split(" ");
           if (message.content.startsWith(prefix + "مسح")) {
@@ -100,7 +100,7 @@ client.on("message", message => {
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('#اسكت')) {
+  if (eyad.content.startsWith('!اسكت')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 let men = eyad.mentions.users.first()
 let mas = eyad.author
@@ -132,7 +132,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
 
 
 client.on('message', eyad => {
-  if (eyad.content.startsWith('#تكلم')) {
+  if (eyad.content.startsWith('!تكلم')) {
 if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
  let men = eyad.mentions.users.first()
  let mas = eyad.author
@@ -176,7 +176,7 @@ client.on("message", message => {
     }
     });
 
-var prefix = "#";
+var prefix = "!";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -224,7 +224,7 @@ client.on('message', message => {
 });
 
 client.on("message", message => {
-     var prefix = "#";
+     var prefix = "!";
     if(message.content.startsWith(prefix + 'روم')) {
      let args = message.content.split(" ").slice(1);
        var nam = args.join(' ');
@@ -238,7 +238,7 @@ client.on("message", message => {
 
 
 client.on('message', message => {
-   if (message.content === "~id") {
+   if (message.content === "!id") {
    let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setThumbnail(message.author.avatarURL)
