@@ -68,22 +68,6 @@ client.on('message', message => {
  
 });
 
-client.on('message', msg => {
-  if (msg.content === 'رابط') {
-    msg.reply('**تم ارسال الرابط في الخاص**');
-  }
-});
-
-    
-client.on('message', message => {
-     if (message.content === "رابط") {
-message.author.send("***WELCOME TO Kingdom of Death***" + `  **
-
-https://discord.gg/gzCfuMK
-
-**`);
-    }
-});      
 
 
 
