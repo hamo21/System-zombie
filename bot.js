@@ -253,20 +253,15 @@ client.on('message', message => {
 });
 
 
-const Slam = [
-  'هلا بيك',
-  'منور يا ولد',
-  'بنورك نفرح',
-  'يا هلا ',
-]
-client.on('message', msg => {
-if  (msg.content === 'هلا') {
-    const slamat = new Discord.RichEmbed()
-    .setDescription(`${Slam[Math.floor(Math.random() * Slam.length)]}`)
-    .setThumbnail(msg.author.avatarURL)
-    msg.channel.send(slamat);
-  }
+client.on("message", message => {
+  if (message.content === "!avatar") {
+   const embed = new Discord.RichEmbed()
+       .setColor('RANDOM')
+       .setFooter('By ♪ ℬℐℓѦℓ✋')
+       .setThumbnail(message.author.avatarURL)
+       .addField(message.author.displayAvatarURL)
+ message.channel.send(embed);
+}
 });
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
