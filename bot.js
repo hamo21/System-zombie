@@ -24,7 +24,7 @@ client.on('message', message => {
      if (message.content === "رابط") {
 message.author.send("***WELCOME TO Kingdom of Death***" + `  **
 
-https://discord.gg/2UJV6Hp
+https://discord.gg/gzCfuMK
 
 **`);
     }
