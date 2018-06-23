@@ -253,15 +253,24 @@ client.on('message', message => {
 });
 
 
-client.on("message", message => {
-  if (message.content === "!avatar") {
-   const embed = new Discord.RichEmbed()
-       .setColor('RANDOM')
-       .setFooter('By ♪ ℬℐℓѦℓ✋')
-       .setThumbnail(message.author.avatarURL)
-       .addField(message.author.displayAvatarURL)
- message.channel.send(embed);
-}
-});
+client.on('message', message => {
+  if (message.content.startsWith("!avatar")) {
+
+      var mentionned = message.mentions.users.first();
+  var king66s;
+    if(mentionned){
+        var king66s = mentionned;
+    } else {
+        var king66s = message.author;
+        
+    }
+      const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+        .setAuthor(message.author.username, message.author.avatarURL)
+      .setImage(`${king66s.avatarURL}`)
+    message.channel.sendEmbed(embed);
+
+  }
+});	
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
