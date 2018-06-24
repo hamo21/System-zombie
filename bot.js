@@ -119,7 +119,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
 
-    if (message.content.startsWith("رابط")) {        
+    if (message.content.startsWith("الرابط")) {        
   message.channel.createInvite({
         thing: true,
         maxUses: 100,
